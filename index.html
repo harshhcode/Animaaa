@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My first Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="one">
+  <div class="left-section">
+    <span class="welcome">Welcome To Anima</span>
+    <span class="info">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span>
+    <span class="info">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span>
+    <span class="contact">Contact us: XXXXXX0102 / XXXXXXXXXXX@mail.com</span>
+    <div class="btns">
+      <button id="btwo" onclick="window.location.href='suclogin.html'">Login</button>
+      <button id="bthree" onclick="window.location.href='register.html'">Register</button>
+    
+    </div>
+
+  </div>
+  <img class="imgone" src="sm.png" alt="pets image" width="400" height="120">
+</div>
+<br><br>
+
+
+
+
+
+    
+    <form id="petForm" onsubmit="submitForm(event)">
+  <!-- Species -->
+  <label>Species Type</label>
+  <select id="speciesType" required>
+    <option value="">select your type</option>
+    <option value="Animal">Animal</option>
+    <option value="Bird">Bird</option>
+  </select>
+
+  <!-- Animal -->
+  <label>Select Animal Type</label>
+  <select id="animalType">
+    <option value="">your animal type</option>
+    <option>Dog</option>
+    <option>Cat</option>
+    <option>Goat</option>
+    <option>Cow/Buffallow</option>
+    <option>Other</option>
+  </select>
+  <textarea id="animalOther" placeholder="Justify Your other"></textarea>
+
+  <!-- Bird -->
+  <label>Select Bird Type</label>
+  <select id="birdType">
+    <option value="">your bird type</option>
+    <option>Parrot</option>
+    <option>Canaries</option>
+    <option>Pigeons</option>
+    <option>Love Bird</option>
+    <option>Other</option>
+  </select>
+  <textarea id="birdOther" placeholder="Justify Your other"></textarea>
+
+  <!-- Query -->
+  <label>Search Your Query</label>
+  <select id="queryType" required>
+    <option value="">search query type</option>
+    <option>Internal Health Doubt</option>
+    <option>External Health Doubt</option>
+    <option>Infectional Doubt</option>
+    <option>Vaccination</option>
+    <option>Follow up</option>
+    <option>Routine Grooming</option>
+    <option>Other</option>
+  </select>
+  <textarea id="queryOther" placeholder="Elaborate Your Query"></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+
+          <br>
+        </div>
+       
+        <script src="script.js"></script>
+        </body>
+
+</html>
