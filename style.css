@@ -1,0 +1,161 @@
+/* Reset some default styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f7f8;
+  color: #333;
+}
+
+/* Centered Form Container */
+form#petForm {
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Headings and Labels */
+form#petForm label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+/* Input, Select and Textarea Styling */
+form#petForm select,
+form#petForm textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+form#petForm select:focus,
+form#petForm textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit Button */
+form#petForm button[type="submit"] {
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+form#petForm button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Optional Responsive Tweaks */
+@media screen and (max-width: 500px) {
+  form#petForm {
+    padding: 20px;
+  }
+
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f7f9;
+}
+
+.one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+  background-color: #fff;
+  border-bottom: 2px solid #ccc;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 60%;
+}
+
+.welcome {
+  font-size: 36px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.info, .contact {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.btns {
+  margin-top: 20px;
+}
+
+#btwo, #bthree {
+  margin-right: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#btwo:hover, #bthree:hover {
+  background-color: #0056b3;
+}
+
+.imgone {
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+
+}
+
+
+
+@media (max-width: 768px) {
+  .one {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-section {
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .imgone {
+    margin-top: 20px;
+    width: 90%;
+  }
+
+  #btwo, #bthree {
+    margin: 10px 5px;
+    width: 100px;
+  }
+}
+
